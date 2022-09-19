@@ -12,7 +12,6 @@
     height: 120px;
   
     background: #f5f4fa;
-    // border: 1px solid #f5f4fa;
     border-radius: 4px;
     text-align: center;
     justify-content: center;
@@ -34,7 +33,6 @@
     margin-top: 30px;
     margin-bottom: 10px;
     @include font(700, 14px, 1.4, 0.03em);
-    
     text-transform: uppercase;
     color: var(--title-text-color);
   }
