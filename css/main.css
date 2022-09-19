@@ -16,8 +16,7 @@ html {
   --logo-color: #000000;
   --white-color: #ffffff;
   --adress-color: #ffffff99;
-  --bg-gradient: rgba(47, 48, 58, 0.4),
-  rgba(47, 48, 58, 0.4);
+  --bg-gradient: rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4);
 }
 
 body {
@@ -49,18 +48,47 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 img {
   display: block;
+  height: auto;
+  max-width: 100%;
+  /*обязательное условие для картинок*/
 }
 
 .backdrop {
@@ -517,28 +545,41 @@ textarea::placeholder {
 
 .pic-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .pic-list {
+    flex-wrap: nowrap;
+  }
 }
 
 .pic-list__block {
   display: flex;
-  width: 270px;
   height: 120px;
   background: #f5f4fa;
-  border: 1px solid #f5f4fa;
-  border: 1px soli;
   border-radius: 4px;
   text-align: center;
   justify-content: center;
   align-items: center;
 }
 
-.pic-list__icon {
-  display: flex;
+.pic-list__item {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .pic-list__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pic-list__item {
+    width: calc((100% - 30px) / 4);
+  }
 }
 
 .pic-list__title {
-  margin-top: 35px;
+  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
