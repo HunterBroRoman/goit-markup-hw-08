@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  height: 80px;
+  margin-top: 0;
+  background-color: var(--white-color);
+  border-bottom: 1px solid #ececec;
+}
+
+.header > .container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+/* style logo header and footer*/
+/* general style nav header*/
+
+.header-logo {
+  color: var(--accent-color);
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo-start {
+  color: var(--logo-color);
+}
+
+
+
+
+/* general style contact header*/
+

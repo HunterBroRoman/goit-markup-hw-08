@@ -1,0 +1,51 @@
+.activ {
+    padding: 0;
+  }
+  
+  .activ-title {
+    margin: 0;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+  }
+  
+  .activ-list {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    padding-bottom: 94px;
+    margin: 0;
+  }
+  
+  
+  
+  .activ-item {
+    position: relative;
+  }
+  
+  .activ-block {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    top: 224px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background: rgba(47, 48, 58, 0.8);
+  }
+  
+  .activ-text {
+    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin: 0;
+  }
