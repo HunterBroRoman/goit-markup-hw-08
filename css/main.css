@@ -516,22 +516,24 @@ textarea::placeholder {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(var(--bg-gradient)), url(../images/bcg.jpg);
+    background-image: linear-gradient(var(--bg-gradient)), url(../images/bg-desk.jpg);
   }
 }
-.hero .hero > .container {
-  padding: 0;
+
+.hero > .container {
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
-  .hero .hero > .container {
+  .hero > .container {
     padding-top: 200px;
     padding-bottom: 200px;
   }
 }
-.hero .hero__slogan {
+
+.hero__slogan {
+  text-align: center;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.36;
@@ -543,7 +545,7 @@ textarea::placeholder {
   text-transform: uppercase;
 }
 @media screen and (min-width: 1200px) {
-  .hero .hero__slogan {
+  .hero__slogan {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -552,7 +554,8 @@ textarea::placeholder {
     width: 700px;
   }
 }
-.hero .hero__btn {
+
+.hero__btn {
   display: inline-flex;
   padding: 10px 32px;
   border-radius: 4px;
@@ -568,8 +571,9 @@ textarea::placeholder {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero .hero__btn:hover,
-.hero .hero__btn:focus {
+
+.hero__btn:hover,
+.hero__btn:focus {
   background-color: var(--white-color);
   color: var(--accent-color);
   cursor: pointer;

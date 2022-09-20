@@ -25,32 +25,33 @@
 
   @media screen and (min-width: 1200px) {
     background-image: linear-gradient(var(--bg-gradient)),
-      url(../images/bcg.jpg);
+      url(../images/bg-desk.jpg);
   
     @media retina {
     background-image: linear-gradient(var(--bg-gradient)),
-    url(../images/bcg-2.jpg);
+    url(../images/bg-desk-2.jpg);
     }
   }
+}
 
 .hero > .container {
-  padding: 0;
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
+  
 
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
+    
   }
-}
-
+  }
 .hero__slogan {
+  text-align: center;
   @include font(900, 26px, 1.36, 0.06em);
   margin: 0 auto;
   margin-bottom: 30px;
   width: 360px;
-
   color: var(--white-color);
   text-transform: uppercase;
 
@@ -60,6 +61,8 @@
     width: 700px;
   }
 }
+
+
 
 .hero__btn {
   display: inline-flex;
@@ -80,10 +83,10 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .hero__btn:hover,
 .hero__btn:focus {
   background-color: var(--white-color);
   color: var(--accent-color);
   cursor: pointer;
-}
 }
