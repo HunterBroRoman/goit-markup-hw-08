@@ -957,9 +957,16 @@ textarea::placeholder {
 
 .filter-list {
   display: flex;
-  justify-content: center;
-  padding: 0;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .filter-list {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 }
 
 .filter-item:not(:last-child) {
@@ -967,12 +974,12 @@ textarea::placeholder {
 }
 
 .filter-btn {
-  padding: 6px 22px;
+  padding: 6px 25px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
+  line-height: 1.6;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--title-text-color);
   background-color: #f5f4fa;
   border: hidden;
@@ -988,17 +995,37 @@ textarea::placeholder {
   border-radius: 4px;
 }
 
+.work-block {
+  display: flex;
+}
+
 .work-list {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 .work-item {
+  display: flex;
   background-color: var(--white-color);
-  width: 370px;
-  height: 405px;
+  width: 450px;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .work-item {
+    width: calc((100% - 30px) / 2);
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200x) {
+  .work-item {
+    width: calc((100% - 30px) / 3);
+    width: 370px;
+  }
 }
 
 .work-link {
