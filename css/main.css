@@ -500,30 +500,59 @@ textarea::placeholder {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--title-text-color);
-  background-image: linear-gradient(var(--bg-gradient)), url(../images/bcg.jpg);
+  background-image: linear-gradient(var(--bg-gradient)), url(../images/bg-mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.hero > .container {
-  padding-top: 200px;
-  padding-bottom: 200px;
+@media retina {
+  .hero {
+    background-image: linear-gradient(var(--bg-gradient)), url(../images/bg-mob-2.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(var(--bg-gradient)), url(../images/bg-tabl.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(var(--bg-gradient)), url(../images/bcg.jpg);
+  }
+}
+.hero .hero > .container {
+  padding: 0;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
 }
-
-.hero__slogan {
-  margin: 0 auto;
-  margin-bottom: 30px;
-  width: 700px;
-  color: var(--white-color);
+@media screen and (min-width: 1200px) {
+  .hero .hero > .container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+.hero .hero__slogan {
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 360px;
+  color: var(--white-color);
   text-transform: uppercase;
 }
-
-.hero__btn {
+@media screen and (min-width: 1200px) {
+  .hero .hero__slogan {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    width: 700px;
+  }
+}
+.hero .hero__btn {
   display: inline-flex;
   padding: 10px 32px;
   border-radius: 4px;
@@ -539,9 +568,8 @@ textarea::placeholder {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.hero__btn:hover,
-.hero__btn:focus {
+.hero .hero__btn:hover,
+.hero .hero__btn:focus {
   background-color: var(--white-color);
   color: var(--accent-color);
   cursor: pointer;
@@ -758,6 +786,11 @@ textarea::placeholder {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .client__list {
+    justify-content: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .client__list {
