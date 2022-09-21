@@ -77,3 +77,7 @@ img {
   max-width: 100%;
   /*обязательное условие для картинок*/
 }
+
+.no-scroll {
+  overflow: hidden;
+}

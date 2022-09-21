@@ -1,11 +1,22 @@
 .contact {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;    
+    }
+   
+    @media screen and (min-width: 1200px) {
     display: flex;
+    flex-direction: row; 
     align-items: center;
-  
     margin-left: auto;
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;
+    }
+    
   }
   
   .contact__item:not(:last-child) {

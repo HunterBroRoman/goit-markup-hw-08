@@ -8,12 +8,14 @@
 
 .header > .container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
 .navigation {
   display: flex;
   align-items: center;
+  
 }
 /* style logo header and footer*/
 /* general style nav header*/

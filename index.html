@@ -56,18 +56,104 @@
           </li>
         </ul>
       </div>
+
+      <div class="burger-menu">
+        <button type="button" class="menu-open">
+          <svg class="burger" width="40" height="40">
+            <use href="./images/icon.svg#icon-burger"></use>
+          </svg>
+        </button>
+
+        <div class="mob-menu is-hidden">
+          <div class="container">
+            <div class="mob-menu-top">
+              <button type="button" class="menu-close">
+                <svg class="menu-close-btn" width="18.67" height="18.67">
+                  <use href="./images/icon.svg#icon-open"></use>
+                </svg>
+              </button>
+              <nav>
+                <ul class="mob-menu-list list">
+                  <li class="mob-menu-item">
+                    <a href="./index.html" class="mob-menu-link link">Студія</a>
+                  </li>
+                  <li class="mob-menu-item">
+                    <a href="./portfolio.html" class="mob-menu-link link"
+                      >Портфоліо</a
+                    >
+                  </li>
+                  <li class="mob-menu-item">
+                    <a href="#barbers" class="mob-menu-link link">Контакти</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="mob-menu-bottom">
+              <div class="mob-menu-connect">
+                <a class="mob-menu-tel link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+                <a class="mob-menu-mail" href="mailto:info@devstudio.com">
+                  info@devstudio.com</a
+                >
+              </div>
+
+              <ul class="mob-soc-list list">
+                <li class="mob-soc-item">
+                  <a
+                    class="mob-soc-link link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >Instagram</a
+                  >
+                </li>
+
+                <li class="mob-soc-item">
+                  <a
+                    class="mob-soc-link link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >Twitter</a
+                  >
+                </li>
+                <li class="mob-soc-item">
+                  <a
+                    class="mob-soc-link link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="mob-soc-item">
+                  <a
+                    class="mob-soc-link link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >Linkedin</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
+
     <main>
-       <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero__slogan">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero__btn" data-modal-open>
             Замовити послугу
           </button>
         </div>
-      </section>  -->
+      </section>
 
-      <!-- <section class="skill section">
+      <section class="skill section">
         <div class="container">
           <h2 class="visually-hidden">НАША ПЕРЕВАГА НАД ІНШИМИ</h2>
 
@@ -126,9 +212,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="activ section">
+      <section class="activ section">
         <div class="container">
           <h2 class="activ-title">Чим ми займаємося</h2>
           <ul class="activ-list list">
@@ -164,9 +250,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="team section">
+      <section class="team section">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team__list list">
@@ -395,9 +481,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="client section">
+      <section class="client section">
         <div class="container">
           <h2 class="client__titls">Постійні клієнти</h2>
 
@@ -446,9 +532,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
-     </main>  
-     <!-- <footer class="footer">
+      </section>
+    </main>
+    <footer class="footer">
       <div class="container">
         <div class="footer-block">
           <a href="./index.html" class="footer-logo"
@@ -481,43 +567,55 @@
 
         <div class="footer-soc">
           <h2 class="footer-soc-title">приєднуйтесь</h2>
-          
+
           <div class="soc-footer-align">
-          <ul class="soc__list soc__list--white list">
-            <li class="soc__item">
-              <a href="" class="soc__link soc__link--white">
-                <svg class="soc__icon soc__icon--white" width="20" height="20">
-                  <use href="./images/icon.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soc__item">
-              <a href="" class="soc__link soc__link--white">
-                <svg
-                  class="soc__icon soc__icon--white"
-                  width="20"
-                  height="16.25"
-                >
-                  <use href="./images/icon.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soc__item">
-              <a href="" class="soc__link soc__link--white">
-                <svg class="soc__icon soc__icon--white" width="20" height="20">
-                  <use href="./images/icon.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soc__item">
-              <a href="" class="soc__link soc__link--white">
-                <svg class="soc__icon soc__icon--white" width="20" height="20">
-                  <use href="./images/icon.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+            <ul class="soc__list soc__list--white list">
+              <li class="soc__item">
+                <a href="" class="soc__link soc__link--white">
+                  <svg
+                    class="soc__icon soc__icon--white"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icon.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc__item">
+                <a href="" class="soc__link soc__link--white">
+                  <svg
+                    class="soc__icon soc__icon--white"
+                    width="20"
+                    height="16.25"
+                  >
+                    <use href="./images/icon.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc__item">
+                <a href="" class="soc__link soc__link--white">
+                  <svg
+                    class="soc__icon soc__icon--white"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icon.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc__item">
+                <a href="" class="soc__link soc__link--white">
+                  <svg
+                    class="soc__icon soc__icon--white"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icon.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div class="subscription">
@@ -539,9 +637,9 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-btn" data-modal-close>
           <svg class="modal-open" width="11" height="11">
@@ -629,6 +727,7 @@
       </div>
     </div>
 
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
+    <script defer src="./js/menu.js"></script>
   </body>
 </html>
