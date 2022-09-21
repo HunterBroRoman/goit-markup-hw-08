@@ -619,8 +619,15 @@ textarea::placeholder {
   }
 }
 
-.contact__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .contact__item:not(:last-child) {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .contact__link {
@@ -760,12 +767,6 @@ textarea::placeholder {
   cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {
-  .skill > .container {
-    margin-bottom: 60px;
-  }
-}
-
 .pic-list {
   display: flex;
   flex-wrap: wrap;
@@ -774,7 +775,6 @@ textarea::placeholder {
 @media screen and (min-width: 1200px) {
   .pic-list {
     flex-wrap: nowrap;
-    margin-bottom: 118px;
   }
 }
 

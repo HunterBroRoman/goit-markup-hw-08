@@ -1,18 +1,15 @@
 .skill > .container {
-  @media screen and (min-width: 768px) {
-    
-    margin-bottom: 60px;
-   }
+  
   }
 .pic-list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    
     @media screen and (min-width: 1200px) {
-     flex-wrap: nowrap; 
-     margin-bottom: 118px;
-    }
+      flex-wrap: nowrap; 
+      }
+    
+    
   }
   
   .pic-list__block {
